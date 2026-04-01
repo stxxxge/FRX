@@ -1,0 +1,64 @@
+/* 
+  #02b875
+*/
+.text-primary,
+.text-primary-hover a:hover,
+.text-primary-hover .active > a {
+  color: #6633ff !important; }
+
+.nav-active-primary .nav-link.active,
+.nav-active-primary .nav > li.active > a,
+.btn.primary,
+.btn.b-primary:hover,
+.btn.b-primary:focus,
+.mejs-controls .mejs-playpause-button button,
+.pace .pace-progress {
+  background-color: #6633ff !important; }
+
+.b-primary,
+.mejs-controls .mejs-time-rail .mejs-time-current {
+  border-color: #6633ff; }
+
+.mejs-error {
+  background-color: #6633ff;
+  border-color: #6633ff; }
+
+  /* Track */
+ /* ::-webkit-scrollbar-track {
+  background: #fff;
+} */
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6633ff; /* 888 */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6633ff; /* 555 */
+}
+
+.form-control {
+  border-color: #6633ff;
+  border-radius: 0;
+  min-height: 2.375rem; }
+  
+.text-success,
+.text-success-hover a:hover,
+.text-success-hover .active > a {
+  color: #6633ff !important; } /* #6cc788 */
+  
+.text-warning,
+.text-warning-hover a:hover,
+.text-warning-hover .active > a {
+  color: #6633ff !important; } /* #f77a99 */
+  
+.text-danger,
+.text-danger-hover a:hover,
+.text-danger-hover .active > a {
+  color: #6633ff !important; } /* #ef1960 */
+
+.primary {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #6633ff; }
+    

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FICTION RXGE</title>
+  <meta name="description" content="Music, Musician, Bootstrap" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="images/RFW.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="images/RFW.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+  <!-- build:css css/styles/app.min.css -->
+  <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
+  
+  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css" type="text/css" />
+  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.css" type="text/css" />
+  <link rel="stylesheet" href="libs/mediaelement/build/mediaelementplayer.min.css" type="text/css" />
+  <link rel="stylesheet" href="libs/mediaelement/build/mep.css" type="text/css" />
+
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="app dk" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <!-- aside -->
+  <div id="aside" class="app-aside modal fade nav-dropdown">
+    <!-- fluid app aside -->
+    <div class="left navside grey dk" data-layout="column">
+      <div class="navbar no-radius">
+        <!-- brand -->
+        <a class="navbar-brand md">
+        	<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
+        		<circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.2)"/>
+        		<circle cx="24" cy="24" r="22" fill="#1c202b" class="brand-color"/>
+        		<circle cx="24" cy="24" r="10" fill="#ffffff"/>
+        		<circle cx="13" cy="13" r="2"  fill="#ffffff" class="brand-animate"/>
+        		<path d="M 14 24 L 24 24 L 14 44 Z" fill="#FFFFFF" />
+        		<circle cx="24" cy="24" r="3" fill="#000000"/>
+        	</svg>
+        
+        	<img src="images/logo.png" alt="." class="hide">
+        	<span class="hidden-folded inline">pulse</span> -->
+        </a>
+        <!-- / brand -->
+      </div>
+
+      <div data-flex-no-shrink>
+        <div class="nav-fold dropup">
+          <a data-toggle="dropdown">
+              <span class="pull-left">
+                <img src="images/FRW.png" alt="..." class="w-32 img-circle">
+              </span>
+              <!-- <span class="clear hidden-folded p-x p-y-xs">
+                <span class="block _500 text-ellipsis nav-icon label primary">ʜᴅʀᴇᴀᴍs</span>
+                <i class="material-icons">
+                  sync_problem
+                </i>
+              </span> -->
+          </a>
+        </div>
+        
+      </div>
+
+      <div data-flex class="hide-scroll">
+          <nav class="scroll nav-stacked nav-active-primary">
+            <ul class="nav" data-ui-nav>
+              <li class="nav-header hidden-folded">
+                <span class="text-xs text-muted">Main</span>
+              </li>
+
+              <li>
+                <a data-toggle="tab" data-target="#home">
+                  <span class="nav-icon">
+                    <i class="material-icons">
+                      language
+                    </i>
+                  </span>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+              
+              <li>
+                <a data-toggle="tab" data-target="#music">
+                  <span class="nav-icon">
+                    <i class="material-icons">
+                      music_note
+                    </i>
+                  </span>
+                  <span class="nav-text">Music</span>
+                </a>
+              </li>
+
+              <li>
+                <a data-toggle="tab" data-target="#themes">
+                  <span class="nav-icon">
+                    <i class="material-icons">
+                      star_half
+                    </i>
+                  </span>
+                  <span class="nav-text">Themes</span>
+                </a>
+              </li>
+
+              <li>
+                <a data-ui-toggle-class="active" data-ui-target="#sw-theme" class="sw-btn">
+                  <span class="nav-icon">
+                    <i class="material-icons">
+                      developer_mode
+                    </i>
+                  </span>
+                  <span class="nav-text">Settings</span>
+                </a>
+              </li>
+
+              <li class="nav-header hidden-folded">
+                <span class="text-xs text-primary">Based on pulseradio and aside</span>
+              </li>
+
+          </nav>
+      </div>
+
+  </div>
+</div>
+  <!-- / -->
+  
+  <!-- content -->
+  <div id="content" class="app-content white bg box-shadow-z2" role="main">
+    <div class="app-header navbar-md black box-shadow-z1">
+  <!-- <div id="content" class="app-content white bg box-shadow-z2" role="main">
+    <div class="app-header hidden-lg-up white lt box-shadow-z1"> -->
+        <div class="navbar">
+          <ul class="nav navbar-nav pull-left hidden-lg-up m-r-0 m-l">
+            <li class="nav-item">
+  
+              <a data-toggle="modal" data-target="#aside" class="nav-link">
+                <i class="material-icons">menu</i>
+              </a>
+  
+            </li>
+          </ul>
+        <!-- brand -->
+        <a href="index.html" class="navbar-brand md">
+        	<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
+        		<circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.2)"/>
+        		<circle cx="24" cy="24" r="22" fill="#1c202b" class="brand-color"/>
+        		<circle cx="24" cy="24" r="10" fill="#ffffff"/>
+        		<circle cx="13" cy="13" r="2"  fill="#ffffff" class="brand-animate"/>
+        		<path d="M 14 24 L 24 24 L 14 44 Z" fill="#FFFFFF" />
+        		<circle cx="24" cy="24" r="3" fill="#000000"/>
+        	</svg>
+        
+        	<img src="images/logo.png" alt="." class="hide"> -->
+        </a>
+        <!-- / brand -->
+        <!-- nabar right -->
+        <ul class="nav navbar-nav pull-right">
+          <li class="nav-item">
+
+            <a class="nav-link">
+              <!-- <i class="material-icons">menu</i> -->
+               <span class="hidden-folded inline text-primary"><b>FICTION RXGE</b></span>
+            </a>
+
+          </li>
+        </ul>
+        <!-- / navbar right -->
+
+
+                  <ul class="nav navbar-nav pull-left">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link clear" id="empire" data-toggle="dropdown"></a>
+                    </li>
+                  </ul>
+
+      </div>
+    </div>
+    
+    <div class="app-footer app-player grey bg">
+      <div class="playlist" style="width:100%"></div>
+    </div>
+
+    <div class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+
+<div class="col-sm-12">
+	<div class="box">
+		<div class="item">
+			<div class="item-overlay active p-a w-full">
+				<a class="pull-right text-white _800"></a>
+			</div>
+			<!-- <img src="images/jp.png" alt="." class="w-full"> -->
+		</div>
+	</div>
+</div>
+
+<div class="page-content">
+  <div class="padding b-b">
+    <div class="row-col">
+        <div class="col-sm w w-auto-xs m-b">
+          <div class="item w rounded">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row-col">
+    <div class="col-lg-9 b-r no-border-md">
+      <div class="padding p-y-0 m-b-md">
+        <!-- <div class="nav-active-border b-primary bottom m-b-md m-t">
+          <ul class="nav l-h-2x" data-ui-jp="taburl">
+            <li class="nav-item m-r inline">
+              <a class="nav-link active" href="#" data-toggle="tab" data-target="#track">Tracks</a>
+            </li>
+            <li class="nav-item m-r inline">
+              <a class="nav-link" href="#" data-toggle="tab" data-target="#playlist">Playlists</a>
+            </li>
+            <li class="nav-item m-r inline">
+              <a class="nav-link" href="#" data-toggle="tab" data-target="#like">Likes</a>
+            </li>
+            <li class="nav-item m-r inline">
+              <a class="nav-link" href="#" data-toggle="tab" data-target="#profile">Profile</a>
+            </li>
+          </ul>
+        </div> -->
+        <div class="tab-content">
+          <div class="nav-link active tab-pane" id="home">
+            <div class="row">
+
+          <div class="col-sm-12">
+	          <div class="box">
+		          <div class="item">
+			          <div class="item-overlay active p-a w-full">
+				          <a class="pull-right text-white _800"></a>
+			          </div>
+			          <img src="images/RFW.png" alt="." class="w-full">
+		          </div>
+	          </div>
+          </div>
+    
+          <div class="row-col">
+            <div class="col-lg-9 b-r no-border-md">
+              <div class="padding">
+                <div class="owl-carousel owl-theme owl-dots-center" data-ui-jp="owlCarousel" data-ui-options="{
+                  margin: 20,
+                  responsiveClass:true,
+                    responsive:{
+                      0:{
+                        items: 2
+                      },
+                        543:{
+                            items: 3
+                        }
+                    }
+                }">
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">ARTIC</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <span class="text-2x text-primary">DRIFT</span>
+                          <span class="text-xs">SERIES</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom text-center">
+                            <!-- <p><b>ɪɴᴛᴇʀғᴀᴄᴇ ғᴏʀ ᴍᴛᴀ<br>ғ://ᴍᴛᴀ/sᴋɪɴs/</b></p> -->
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a href="#" class="btn-favorite"></a>
+                          </div> <!-- <i class="material-icons">file_download</i> -->
+
+                          <div class="text-center p-a-md box">
+                            <h6 class="text-u-c m-a-0 m-t">ADS</h6>
+                            <a href="https://discord.gg/WrKftFyYw7">
+                              <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">ARTIC</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <span class="text-2x text-primary">DRIFT</span>
+                          <span class="text-xs">TEAM</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom text-center">
+                            <!-- <p><b>ɪɴᴛᴇʀғᴀᴄᴇ ғᴏʀ ᴍᴛᴀ<br>ғ://ᴍᴛᴀ/sᴋɪɴs/</b></p> -->
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a class="btn-favorite"></a>
+                          </div> <!-- <i class="material-icons">file_download</i> -->
+
+                          <div class="text-center p-a-md box">
+                            <h6 class="text-u-c m-a-0 m-t">ADT</h6>
+                            <a href="https://discord.gg/EVbsz6APqJ">
+                              <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">RUN WHAT</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <span class="text-2x text-primary">YOU</span>
+                          <span class="text-xs">BRUNG</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom text-center">
+                            <!-- <p><b>ɪɴᴛᴇʀғᴀᴄᴇ ғᴏʀ ᴍᴛᴀ<br>ғ://ᴍᴛᴀ/sᴋɪɴs/</b></p> -->
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a class="btn-favorite"></a>
+                          </div> <!-- <i class="material-icons">file_download</i> -->
+
+                          <div class="text-center p-a-md box">
+                            <h6 class="text-u-c m-a-0 m-t">RWYB</h6>
+                            <a href="https://discord.gg/aAjj7RVajj">
+                              <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">DARK</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <span class="text-2x text-primary">SIDE</span>
+                          <span class="text-xs">CLUB</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom text-center">
+                            <!-- <p><b>ɪɴᴛᴇʀғᴀᴄᴇ ғᴏʀ ᴍᴛᴀ<br>ғ://ᴍᴛᴀ/sᴋɪɴs/</b></p> -->
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a class="btn-favorite"></a>
+                          </div> <!-- <i class="material-icons">file_download</i> -->
+
+                          <div class="text-center p-a-md box">
+                            <h6 class="text-u-c m-a-0 m-t">DS</h6>
+                            <a href="https://discord.gg/Vw5AJJqJce">
+                              <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">ANTI</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <span class="text-2x text-primary">SOCIAL</span>
+                          <span class="text-xs">CLUB</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom text-center">
+                            <!-- <p><b>ɪɴᴛᴇʀғᴀᴄᴇ ғᴏʀ ᴍᴛᴀ<br>ғ://ᴍᴛᴀ/sᴋɪɴs/</b></p> -->
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a class="btn-favorite"></a>
+                          </div> <!-- <i class="material-icons">file_download</i> -->
+
+                          <div class="text-center p-a-md box">
+                            <h6 class="text-u-c m-a-0 m-t">ASC</h6>
+                            <a href="https://discord.gg/buJ9J3z93b">
+                              <button class="md-btn md-flat m-b-sm w-xs text-primary">Discord</button>
+                            </a>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+
+              <div class="tab-pane" id="themes">
+              <div class="row">
+
+                <div class="col-sm-12">
+	            <div class="box">
+		          <div class="item">
+			          <div class="item-overlay active p-a w-full">
+				        <a class="pull-right text-white _800"></a>
+			          </div>
+			            <img src="images/RFW.png" alt="." class="w-full">
+		            </div>
+	              </div>
+              </div>
+
+              <div class="row-col">
+            <div class="col-lg-9 b-r no-border-md">
+              <div class="padding">
+                <div class="owl-carousel owl-theme owl-dots-center" data-ui-jp="owlCarousel" data-ui-options="{
+                  margin: 20,
+                  responsiveClass:true,
+                    responsive:{
+                      0:{
+                        items: 2
+                      },
+                        543:{
+                            items: 3
+                        }
+                    }
+                }">
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">BRIGHT</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <sup>UI</sup>
+                          <span class="text-2x text-primary">SIDE</span>
+                          <span class="text-xs">KINO</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom">
+                            <div class="panel no-border m-b-xs">
+                          <div id="c_1" class="collapse">
+                            <div class="box-body box">
+                                <p class="text-primary"><b>- before you install the interface you must have the kino mod.<br>
+                                  <br>- unzip the archive to any location on your desktop and copy the contents to the root folder:<br>
+                                  <br><span class="pull-left label primary">kino mod/mods/KN_Base/themes</span><br>
+                                  <br>- how to change the theme:<br>
+                                  <br><span class="pull-left label primary">f4/settings/ui/theme</span></b></p>
+                            </div>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a class="btn-favorite"></a>
+                          </div>
+                          <div class="text-center p-a-md box">
+                          <a class="btn btn-icon btn-social white" data-toggle="collapse" data-parent="#accordion" data-target="#c_1">
+                            <i class="fa fa-rss"></i>
+                            <i class="fa fa-rss primary"></i>
+                          </a>
+                          <a href="files/bs.ini" class="btn btn-icon btn-social pr" download="bs.ini">
+                            <i class="fa fa-dropbox"></i>
+                            <i class="fa fa-dropbox primary"></i>
+                          </a>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">DARK</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <sup>UI</sup>
+                          <span class="text-2x text-primary">SIDE</span>
+                          <span class="text-xs">KINO</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom">
+                            <div class="panel no-border m-b-xs">
+                          <div id="c_2" class="collapse">
+                            <div class="box-body box">
+                                <p class="text-primary"><b>- before you install the interface you must have the kino mod.<br>
+                                  <br>- unzip the archive to any location on your desktop and copy the contents to the root folder:<br>
+                                  <br><span class="pull-left label primary">kino mod/mods/KN_Base/themes</span><br>
+                                  <br>- how to change the theme:<br>
+                                  <br><span class="pull-left label primary">f4/settings/ui/theme</span></b></p>
+                            </div>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a class="btn-favorite"></a>
+                          </div>
+                          <div class="text-center p-a-md box">
+                          <a class="btn btn-icon btn-social white" data-toggle="collapse" data-parent="#accordion" data-target="#c_2">
+                            <i class="fa fa-rss"></i>
+                            <i class="fa fa-rss primary"></i>
+                          </a>
+                          <a href="files/ds.ini" class="btn btn-icon btn-social pr" download="ds.ini">
+                            <i class="fa fa-dropbox"></i>
+                            <i class="fa fa-dropbox primary"></i>
+                          </a>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <div class="box-body text-center light lt">
+                        <h6 class="text-u-c m-a-0 m-t">?</h6>
+                        <h3 class="m-a-0 m-l m-v">
+                          <sup>UI</sup>
+                          <span class="text-2x text-primary">?</span>
+                          <span class="text-xs">KINO</span>
+                        </h3>
+                        </div>
+                        <div class="item r" data-id="item-1" data-src="">
+                        <div class="item-media item-media-4by3">
+                          <a class="item-media-content" style="background-image: url('images/FRW.png');"></a>
+                        </div>
+                        <div class="item-info">
+                          <div class="item-overlay bottom">
+
+                          <!-- <div class="panel no-border m-b-xs">
+                          <div id="c_3" class="collapse">
+                            <div class="box-body box">
+                                <p><b>- before you install the interface you must have the kino mod.<br>
+                                  <br>- unzip the archive to any location on your desktop and copy the contents to the root folder:<br>
+                                  <br>kino mod/mods/KN_Base/themes<br>
+                                  <br>- how to change the theme:<br>
+                                  <br>f4/settings/ui/theme</b></p>
+                            </div>
+                          </div>
+                        </div> -->
+
+                          </div>
+                          <div class="item-overlay bottom text-right">
+                            <a href="#" class="btn-favorite"></a>
+                          </div>
+                          <div class="text-center p-a-md box">
+                          <a class="btn btn-icon btn-social white" data-toggle="collapse" data-parent="#accordion" data-target="#c_3">
+                            <i class="fa fa-rss"></i>
+                            <i class="fa fa-rss primary"></i>
+                          </a>
+                          <a class="btn btn-icon btn-social pr">
+                            <i class="fa fa-dropbox"></i>
+                            <i class="fa fa-dropbox primary"></i>
+                          </a>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane" id="music">
+            <div class="row">
+
+              <div class="col-sm-12">
+	            <div class="box">
+		          <div class="item">
+			          <div class="item-overlay active p-a w-full">
+				        <a class="pull-right text-white _800"></a>
+			          </div>
+			            <img src="images/RFW.png" alt="." class="w-full">
+		            </div>
+	              </div>
+              </div>
+
+                      <div class="row item-list item-list-md item-list-li m-b">
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-1" data-src="ost/sᴋᴇʟᴇʀ. - ᴛᴇʟ ᴀᴠɪᴠ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴛᴇʟ ᴀᴠɪᴠ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-2" data-src="ost/sᴋᴇʟᴇʀ. - ᴛᴏᴋʏᴏ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴛᴏᴋʏᴏ</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-3" data-src="ost/sᴋᴇʟᴇʀ. - ᴡᴇ'ʀᴇ ʙᴜʀɴɪɴɢ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴡᴇ'ʀᴇ ʙᴜʀɴɪɴɢ</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-4" data-src="ost/sᴋᴇʟᴇʀ. - ғᴀʟʟɪɴɢ ᴀᴘᴀʀᴛ ғᴇᴀᴛ. ʜᴏʟʟʏ ᴅʀᴜᴍᴍᴏɴᴅ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ғᴀʟʟɪɴɢ ᴀᴘᴀʀᴛ ғᴇᴀᴛ. ʜᴏʟʟʏ ᴅʀᴜᴍᴍᴏɴᴅ</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-5" data-src="ost/sᴋᴇʟᴇʀ. sᴇʟᴇᴄᴛs - ɪɴ ᴍʏ ᴍɪɴᴅ (sᴋᴇʟᴇʀ ғʟɪᴘ).mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ. sᴇʟᴇᴄᴛs</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ɪɴ ᴍʏ ᴍɪɴᴅ (sᴋᴇʟᴇʀ ғʟɪᴘ)</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-6" data-src="ost/sᴋᴇʟᴇʀ. - ᴘᴀʟᴇ ʟɪɢʜᴛ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴘᴀʟᴇ ʟɪɢʜᴛ</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-12">
+                <div class="item r" data-id="item-7" data-src="ost/sᴋᴇʟᴇʀ. - ᴏɴᴇ ᴅᴀʏ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴏɴᴇ ᴅᴀʏ</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-xs-12">
+                <div class="item r" data-id="item-8" data-src="ost/sᴋᴇʟᴇʀ. - ᴛᴏ ᴅɪᴇ ᴡɪᴛʜᴏᴜᴛ sᴄᴀʀs.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴛᴏ ᴅɪᴇ ᴡɪᴛʜᴏᴜᴛ sᴄᴀʀs</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="item r" data-id="item-9" data-src="ost/sᴋᴇʟᴇʀ. - ᴏɴsʀᴀ.mp3">
+                <div class="item-media ">
+                  <a href="track.detail.html" class="item-media-content" style="background-image: url('images/RFW.png');"></a>
+                  <div class="item-overlay center">
+                    <button  class="btn-playpause">Play</button>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <span class="pull-right label primary">sᴏᴜɴᴅᴄʟᴏᴜᴅ</span>
+                  <div class="item-title text-ellipsis">
+                    <a href="track.detail.html">sᴋᴇʟᴇʀ.</a>
+                  </div>
+                  <div class="item-author text-sm text-ellipsis ">
+                    <a href="artist.detail.html" class="text-muted">ᴏɴsʀᴀ</a>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+<!-- ############ PAGE END-->
+
+</div>
+
+  <!-- ############ SWITHCHER START-->
+  <div id="switcher">
+    <div class="switcher white" id="sw-theme">
+      <!-- <a href="#" data-ui-toggle-class="active" data-ui-target="#sw-theme" class="white sw-btn">
+    <i class="fa fa-slack"></i>
+      </a> -->
+      <div class="box-header">
+        <strong>Theme Switcher</strong>
+      </div>
+      <div class="box-divider"></div>
+      <div class="box-body">
+        <label class="md-check m-y-xs" data-target="folded">
+          <input type="checkbox">
+          <i class="green"></i>
+            <span><b>Folded Aside</b></span>
+         </label>
+         <p></p>
+        <p><b>Colors:</b></p>
+        <p data-target="color">
+          <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+            <input type="radio" name="color" value="primary">
+            <i class="info"></i>
+          </label>
+          <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+            <input type="radio" name="color" value="warn">
+            <i class="warn"></i>
+          </label>
+          <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+            <input type="radio" name="color" value="accent">
+            <i class="accent"></i>
+          </label>
+          <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+            <input type="radio" name="color" value="blue">
+            <i class="blue"></i>
+          </label>
+          <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
+            <input type="radio" name="color" value="success">
+            <i class="success"></i>
+          </label>
+        </p>
+        <p><b>Themes:</b></p>
+        <div data-target="bg" class="clearfix">
+          <label class="radio radio-inline m-a-0 ui-check ui-check-lg">
+            <input type="radio" name="theme" value="light">
+            <i class="light"></i>
+          </label>
+          <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-lg">
+            <input type="radio" name="theme" value="black">
+            <i class="black"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ############ SHARE END -->
+
+<!-- ############ LAYOUT END-->
+  </div>
+
+<!-- build:js scripts/app.min.js -->
+<!-- jQuery -->
+  <script src="libs/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="libs/tether/dist/js/tether.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="libs/jquery.stellar/jquery.stellar.min.js"></script>
+  <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="libs/jscroll/jquery.jscroll.min.js"></script>
+  <script src="libs/PACE/pace.min.js"></script>
+  <script src="libs/jquery-pjax/jquery.pjax.js"></script>
+
+  <script src="libs/mediaelement/build/mediaelement-and-player.min.js"></script>
+  <script src="libs/mediaelement/build/mep.js"></script>
+  <script src="scripts/player.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+  <script src="scripts/ui-taburl.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/site.js"></script>
+  <script src="scripts/ajax.js"></script>
+  <script src="scripts/empire.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>
