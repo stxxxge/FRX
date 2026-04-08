@@ -46,7 +46,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam tu hanc copiosiorem etiam soles dicere. Nihil illinc huc pervenit.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴛᴇʟ ᴀᴠɪᴠ.mp3",
             "meta": {
                 "author": "ᴛᴇʟ ᴀᴠɪᴠ",
@@ -64,7 +64,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴛᴏᴋʏᴏ.mp3",
             "meta": {
                 "author": "ᴛᴏᴋʏᴏ",
@@ -81,7 +81,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴡᴇ'ʀᴇ ʙᴜʀɴɪɴɢ.mp3",
             "meta": {
                 "author": "ᴡᴇ'ʀᴇ ʙᴜʀɴɪɴɢ",
@@ -98,7 +98,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ғᴀʟʟɪɴɢ ᴀᴘᴀʀᴛ ғᴇᴀᴛ. ʜᴏʟʟʏ ᴅʀᴜᴍᴍᴏɴᴅ.mp3",
             "meta": {
                 "author": "ғᴀʟʟɪɴɢ ᴀᴘᴀʀᴛ ғᴇᴀᴛ. ʜᴏʟʟʏ ᴅʀᴜᴍᴍᴏɴᴅ",
@@ -115,7 +115,7 @@
             "title": "sᴋᴇʟᴇʀ. sᴇʟᴇᴄᴛs",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. sᴇʟᴇᴄᴛs - ɪɴ ᴍʏ ᴍɪɴᴅ (sᴋᴇʟᴇʀ ғʟɪᴘ).mp3",
             "meta": {
                 "author": "ɪɴ ᴍʏ ᴍɪɴᴅ (sᴋᴇʟᴇʀ ғʟɪᴘ)",
@@ -132,7 +132,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴘᴀʟᴇ ʟɪɢʜᴛ.mp3",
             "meta": {
                 "author": "ᴘᴀʟᴇ ʟɪɢʜᴛ",
@@ -149,7 +149,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴏɴᴇ ᴅᴀʏ.mp3",
             "meta": {
                 "author": "ᴏɴᴇ ᴅᴀʏ",
@@ -166,7 +166,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴛᴏ ᴅɪᴇ ᴡɪᴛʜᴏᴜᴛ sᴄᴀʀs.mp3",
             "meta": {
                 "author": "ᴛᴏ ᴅɪᴇ ᴡɪᴛʜᴏᴜᴛ sᴄᴀʀs",
@@ -183,7 +183,7 @@
             "title": "sᴋᴇʟᴇʀ.",
             "except": "Hidem saepe faciamus. Quid ad utilitatem tantae pecuniae? Utram tandem linguam nescio? Sed hoc sane concedamus.",
             "link": "#",
-            "thumb": { "src": "images/RFW.png" },
+            "thumb": { "src": "images/FRW.png" },
             "src": "ost/sᴋᴇʟᴇʀ. - ᴏɴsʀᴀ.mp3",
             "meta": {
                 "author": "ᴏɴsʀᴀ",
